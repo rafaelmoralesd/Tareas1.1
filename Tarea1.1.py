@@ -33,7 +33,22 @@ for i in range(1,11):
     
     multiplicacion = numero * i
     print(f"{numero} x {i} = {multiplicacion}")
-    
+  
+print() 
+print("---------------------------------------------------")
+print("Ejercicio 3")
+
+lista = [4, 2, 7, 4, 2, 1, 9, 7]
+
+lista_unica = sorted(set(lista))    
+
+print("La lista original es :", lista)
+print("La lista sin numeros repetidos es :", lista_unica)
+
+print()
+
+print("---------------------------------------------------")
     
     
 
+p
