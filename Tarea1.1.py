@@ -48,7 +48,27 @@ print("La lista sin numeros repetidos es :", lista_unica)
 print()
 
 print("---------------------------------------------------")
-    
-    
+print("Ejercicio 4")
+estudiantes = {}
 
-p
+while True:
+    nombre = input("Escriba el nombre del estudiante o escriba salir para terminar: ")
+    if nombre.lower() == 'salir':
+        break
+    try:
+        nota = float(input(f"Ingrese la nota de {nombre}: "))
+        estudiantes[nombre] = nota
+    except ValueError:
+        print("Por favor, ingrese un valor valido para la nota.")
+
+
+print("\nDatos de los estudiantes:")
+for nombre, nota in estudiantes.items():
+    print(f"{nombre}: {nota}")
+    
+    
+print()
+
+print("---------------------------------------------------")
+print("Ejercicio 5")    
+    
