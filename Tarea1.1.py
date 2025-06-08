@@ -71,4 +71,25 @@ print()
 
 print("---------------------------------------------------")
 print("Ejercicio 5")    
+
+ventas = {
+    'Producto': ['A', 'B', 'A', 'C', 'B', 'A'],
+    'Cantidad': [10, 5, 7, 3, 2, 8]
+}
+
+resultado = {}
+
+for i in range(len(ventas['Producto'])):
     
+    producto = ventas['Producto'][i]
+    
+    cantidad = ventas['Cantidad'][i]
+
+    if producto in resultado:
+        
+        resultado[producto] = resultado[producto]+cantidad
+    else:
+        resultado[producto] = cantidad
+
+print("Ventas por cada uno de los producto")
+print(resultado)    
